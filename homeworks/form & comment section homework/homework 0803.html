@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="“en”">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solway&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="homework 0803.css" />
+    <title>F1 Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>A girl's F1 Blog</h1>
+    </header>
+    <div>
+      <nav>
+        <button class="navButton">Home</button>
+        <button class="navButton">About F1</button>
+        <button class="navButton">Teams</button>
+        <button class="navButton" onclick="location.href='contact.html'">
+          Contact
+        </button>
+      </nav>
+      <main>
+        <article>
+          <h2>Why this blog?</h2>
+          <div id="tempShow"></div>
+        </article>
+        <section>
+          <div id="tempSection">
+            <div id="tempLocation"></div>
+            <div id="temperature"></div>
+          </div>
+        </section>
+        <section class="commentSection">
+          <p>Leave a comment below!</p>
+          <form>
+            <textarea
+              name="userName"
+              id="userName"
+              placeholder="Your name"
+            ></textarea>
+            <textarea id="newComment" placeholder="Add your comment"></textarea>
+            <div class="addCommentBtn">
+              <input type="button" value="Comment" />
+              <button id="clear">Cancel</button>
+            </div>
+          </form>
+        </section>
+        <div id="allSubmittedComments"></div>
+      </main>
+    </div>
+    <footer class="footer mt-auto">
+      <div class="socialmedia">
+        <a
+          href="https://www.facebook.com/buzzfeedunsolved"
+          class="fa fa-facebook"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA"
+          class="fa fa-youtube"
+          target="_blank"
+        >
+        </a>
+        <a
+          href="https://www.instagram.com/buzzfeedunsolved/"
+          class="fa fa-instagram"
+          target="_blank"
+        ></a>
+      </div>
+      <div>&copy; Copyright 2022</div>
+    </footer>
+    <script src="homework-0803.js"></script>
+  </body>
+</html>

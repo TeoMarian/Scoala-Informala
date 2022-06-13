@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+
+h1 {
+    padding: 30px;
+}
+
+.requestedPhoto {
+    max-width: 500px;
+    max-height: 500px;
+    padding: 50px;
+}

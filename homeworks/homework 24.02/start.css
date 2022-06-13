@@ -1,0 +1,29 @@
+div {
+    max-width: 500px;
+    border-radius: 10px;
+    border-color: #f1c0e8;
+    background-color: #fde4cf;
+}
+
+#shopperdetails {
+    color: green;
+}
+
+/*used to transform a into a block level element because the first letter pseudo element requires it */
+p+a {
+    display: block;
+}
+
+p+a::first-letter {
+    text-transform: uppercase;
+    color: rgb(165, 29, 165);
+}
+
+/*use the child combinator to find anchors which are children of li, filter them with an attribute selector and then target children bearing a specific class (it's *= , not =* */
+li>a[href*="en-US"]>.red {
+    color: red;
+}
+
+#shopperdetails div>p>a:hover {
+    background-color: #b597d3;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solway&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>F1 Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>A girl's F1 Blog</h1>
+    </header>
+    <div>
+      <nav>
+        <button onclick="location.href='homework 0803.html'">Home</button>
+        <button>About F1</button>
+        <button>Teams</button>
+        <button>Contact</button>
+      </nav>
+      <main>
+        <form>
+          <div>
+            <label for="fullname">Name</label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              required
+              placeholder="Enter name"
+            />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter email"
+            />
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Enter subject"
+            />
+          </div>
+          <div id="messagesection">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              required
+              placeholder="Message"
+            ></textarea>
+            <button id="messagesubmit" <!-- type="submit" -->
+              <!-- onClick="this.form.classList.add('validate')" -->
+              > Send message
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer class="footer mt-auto">
+      <div class="socialmedia">
+        <a
+          href="https://www.facebook.com/buzzfeedunsolved"
+          class="fa fa-facebook"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA"
+          class="fa fa-youtube"
+          target="_blank"
+        >
+        </a>
+        <a
+          href="https://www.instagram.com/buzzfeedunsolved/"
+          class="fa fa-instagram"
+          target="_blank"
+        ></a>
+      </div>
+      <div>&copy; Copyright 2022</div>
+    </footer>
+    <script src="./static/js/main.js"></script>
+  </body>
+</html>

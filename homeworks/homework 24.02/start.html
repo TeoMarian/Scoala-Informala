@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Purchase</title>
+    <link rel="stylesheet" href="start.css" />
+    <style>
+      #wrapcheck div > p > a:hover {
+        color: #67c267;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Purchase details</h1>
+    <p>Thanks for choosing our shop!</p>
+    <a href="./basket.html">basket</a>
+    <ol>
+      <li>
+        <a href="./anywhere/en-US">Not red, <span class="red">RED!</span> </a>
+      </li>
+      <li>
+        <a href="./anywhere/en-GB">Not red, <span class="red">RED!</span> </a>
+      </li>
+    </ol>
+    <div>
+      <form>
+        <input name="purchase" type="hidden" value="Purchase" />
+        <fieldset id="shopperdetails">
+          <legend>Shopper details</legend>
+          <div>
+            <p>
+              Please fill in the fields below. For more details click
+              <a href="./anywhere.com">here</a>.
+            </p>
+          </div>
+          <label for="title">Title</label>
+          <select name="title" id="title">
+            <option value="mr">Mr</option>
+            <option value="ms">Ms</option>
+            <option value="mrs">Mrs</option>
+          </select>
+          <br />
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" />
+          <br />
+          <label for="lname">Last Name</label>
+          <input for="lname" name="lname" id="lname" />
+          <br />
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" />
+          <br />
+          <label for="county">County</label>
+          <select name="county" id="county">
+            <option value="Alba">Alba</option>
+            <option value="Arad">Arad</option>
+            <option value="Bacau">Bacau</option>
+            <option value="Cluj">Cluj</option>
+          </select>
+          <br />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="name" />
+          <br />
+          <label for="phonenumber">Phone number</label>
+          <input type="text" name="phonenumber" id="phonenumber" />
+        </fieldset>
+        <fieldset>
+          <legend>Package details</legend>
+          <label for="giftwrap">Gift wrapping</label>
+          <label for="giftwrapyes">Yes</label>
+          <input name="giftwrap" type="radio" id="gwy" value="y" />
+          <label for="giftwrapno">No</label>
+          <input name="giftwrap" type="radio" id="gwn" value="n" />
+          <br /><br />
+          <label for="wrapoptions">Wrapping Options</label>
+          <fieldset id="wrapcheck">
+            <input type="checkbox" name="wrapoption1" id="wrapoptions1" />
+            <label for="wrapoption1">Wrapping paper</label>
+            <br />
+            <input type="checkbox" name="wrapoption2" id="wrapoption2" />
+            <label for="wrapoption2">Ribbon</label>
+            <br />
+            <input type="checkbox" name="wrapoption3" id="wrapoption3" />
+            <label for="wrapoption3">Gift tag</label>
+            <div>
+              <p>
+                If you have any questions please get in touch with us
+                <a href="./anywhere.com">here</a>.
+              </p>
+            </div>
+          </fieldset>
+        </fieldset>
+        <p>
+          <textarea name="terms" cols="30" rows="4" readonly="readonly">
+TERMS AND CONDITIONS...</textarea
+          >
+        </p>
+        <p>
+          <input type="submit" name="submit" value="Send Form" />
+          <input type="reset" value="Clear form" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
